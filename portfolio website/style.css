@@ -594,11 +594,8 @@ input{
     /* margin-top: 8rem; */
     padding-top: 10rem;
     display: flex;
-    /* background: url(./about\ image.jpg) no-repeat; */
-    /* background-size: cover; */
-    /* height: 30rem; */
-    /* width:99.9%; */
-    /* border: solid 2px red; */
+    background-color: lightgray;
+  
 }
 
 .about-team{
@@ -654,3 +651,20 @@ input{
 
 
 }
+
+/* ****** portfolio section ****** */
+
+ .portfolio-content .portfolio-catogories{
+
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+ }
+
+.portfolio-catogories li{
+
+    list-style: none;
+    margin-left: 5rem;
+}
+
