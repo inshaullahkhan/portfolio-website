@@ -85,22 +85,30 @@ hr.solid {
   
 /* **** Hero section ******** */
 
-.hero-section{
+ .container{
 
-    background-color: red;
-    width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
-}
+ }
 
-.hero-section .container-box{
+ .container .box1{
 
-    width: 1280px;
-    height: 584px;
-    align-items:  center;
-    justify-content: center;
-    margin-left: 80px;
-    padding-right: 90px;
-    margin-top: 60px;
-    background-color: blue;
+    background-color: green;
+   padding: 1rem;
+   margin: 1rem;
 
-}
+ }
+
+ .container1{
+
+    display: flex;
+
+ }
+ .container1 .box2{
+
+    background-color: green;
+   padding: 1rem;
+   margin: 1rem;
+
+ }
