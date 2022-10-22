@@ -82,7 +82,10 @@ $('.slider').slick({
   adaptiveHeight: true
 
   });
-		  
+  
+  //   ****** testimonials *******
+
+
 $('.team-container').slick({
 
     dots: true,
@@ -94,6 +97,46 @@ $('.team-container').slick({
 
 });
 
-//   ****** testimonials *******
+const button = document.querySelectorAll('.btn')
+const images = document.querySelectorAll('.box1')
+
+button.forEach((buttons)=>{
+
+    buttons.addEventListener('click', (e)=>{
+
+        e.preventDefault()
+        const filter = e.target.dataset.filter
+
+        images.forEach((item)=>{
+
+            if(filter==='all'){
+                item.style.display = 'block'
+            }
+
+
+            else if(item.classList.contains(filter)){
+
+                item.style.display = 'block'
+
+            }
+
+            else{
+
+                item.style.display = 'none'
+            }
+
+
+
+        })
+
+    })
+
+
+})
+
+
+
+
+
 
 
