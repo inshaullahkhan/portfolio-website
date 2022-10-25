@@ -653,6 +653,8 @@ input{
 }
 
 /* ****** portfolio section ****** */
+
+
 .portfolio{
 
     /* border: solid 2px red; */
@@ -669,6 +671,10 @@ input{
 .portfolio .portfolio-content{
 
     margin-bottom: 5rem;
+    /* border: solid 2px black; */
+    /* display: flex; */
+    align-items:  center;
+    justify-content: center;
 }
 
 
@@ -677,19 +683,44 @@ input{
 
 
     display: flex;
+    margin-left: 20rem;
+    align-items: flex-end;
+    justify-items: end;
+    border: solid 2px black;
     border-radius: 15px;
-    background-color: black;
+    width: 50%;
+    background-color: rgba(14, 14, 163, 0.907);
     text-align: center;
     justify-content: center;
  }
 
-.portfolio-catogories li a {
+.portfolio-catogories li a{
 
-    background-color: red;
-    padding: 1rem;
+    /* background-color: red; */
+    padding-left: 3rem;
+    font-size: 1.5rem;
+    text-decoration-style: none;
     color: white;
     list-style: none;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
+}
+
+.portfolio-catogories li{
+    list-style: none;
+}
+
+.portfolio-catogories li a:hover{
+
+
+    border-radius: 50px;
+    /* background-color: black; */
+    color: black;
+
+}
+.portfolio-catogories li a:focus-visible{
+
+    color: black;
+
 }
 
 .portfolio-pics{
@@ -760,10 +791,48 @@ input{
 
 }
 
+/* ****** Footer styling ****** */
 
+.footer{
+    background-color: rgba(14, 14, 163, 0.907);
+}
 
-.testing{
+.footer-content{
 
     display: flex;
+    position: relative;
+    justify-items: space-evenly;
 
+}
+
+.footer-left{
+    color: white;
+    width: 33%;
+    padding: 5rem;
+}
+.footer-center{
+
+    width: 33%;
+    color: white;
+    padding: 5rem;
+}
+
+.footer-right{
+
+   color: white;
+   width: 33%;
+   padding: 5rem;
+
+}
+.footer-right li{
+
+   text-transform: lowercase !important;
+   line-height: 4rem;
+
+}
+
+hr.solid{
+
+    border-top: solid 2px red;
+    color: red;
 }
